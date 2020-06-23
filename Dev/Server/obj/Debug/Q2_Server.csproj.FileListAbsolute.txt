@@ -1,0 +1,10 @@
+C:\Users\guill\source\repos\Workshop\Q2_Server\bin\Debug\Q2_Server.exe.config
+C:\Users\guill\source\repos\Workshop\Q2_Server\bin\Debug\Q2_Server.exe
+C:\Users\guill\source\repos\Workshop\Q2_Server\bin\Debug\Q2_Server.pdb
+C:\Users\guill\source\repos\Workshop\Q2_Server\bin\Debug\Q2.dll
+C:\Users\guill\source\repos\Workshop\Q2_Server\bin\Debug\Q2.pdb
+C:\Users\guill\source\repos\Workshop\Q2_Server\obj\Debug\Q2_Server.csprojAssemblyReference.cache
+C:\Users\guill\source\repos\Workshop\Q2_Server\obj\Debug\Q2_Server.csproj.CoreCompileInputs.cache
+C:\Users\guill\source\repos\Workshop\Q2_Server\obj\Debug\Q2_Server.csproj.CopyComplete
+C:\Users\guill\source\repos\Workshop\Q2_Server\obj\Debug\Q2_Server.exe
+C:\Users\guill\source\repos\Workshop\Q2_Server\obj\Debug\Q2_Server.pdb

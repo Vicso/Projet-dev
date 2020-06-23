@@ -1,0 +1,12 @@
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Q2\bin\Debug\Q2.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Q2\bin\Debug\Q2.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Q2\obj\Debug\CommonLib.csprojAssemblyReference.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Q2\obj\Debug\CommonLib.csproj.CoreCompileInputs.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Q2\obj\Debug\Q2.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Q2\obj\Debug\Q2.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\CommonLib\obj\Debug\CommonLib.csprojAssemblyReference.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\CommonLib\obj\Debug\CommonLib.csproj.CoreCompileInputs.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\CommonLib\bin\Debug\CommonLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\CommonLib\bin\Debug\CommonLib.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\CommonLib\obj\Debug\CommonLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\CommonLib\obj\Debug\CommonLib.pdb

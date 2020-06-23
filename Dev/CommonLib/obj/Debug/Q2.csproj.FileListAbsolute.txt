@@ -1,0 +1,6 @@
+C:\Users\guill\source\repos\Workshop\Q2\obj\Debug\Q2.csprojAssemblyReference.cache
+C:\Users\guill\source\repos\Workshop\Q2\obj\Debug\Q2.csproj.CoreCompileInputs.cache
+C:\Users\guill\source\repos\Workshop\Q2\bin\Debug\Q2.dll
+C:\Users\guill\source\repos\Workshop\Q2\bin\Debug\Q2.pdb
+C:\Users\guill\source\repos\Workshop\Q2\obj\Debug\Q2.dll
+C:\Users\guill\source\repos\Workshop\Q2\obj\Debug\Q2.pdb
