@@ -1,0 +1,10 @@
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\bin\Debug\ClientWindows.exe.config
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\bin\Debug\ClientWindows.exe
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\bin\Debug\ClientWindows.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.csprojAssemblyReference.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.Form1.resources
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.Properties.Resources.resources
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.csproj.GenerateResource.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.csproj.CoreCompileInputs.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.exe
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.pdb
