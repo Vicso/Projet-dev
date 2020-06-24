@@ -12,8 +12,8 @@
             String attribut = (String) request.getAttribute("test");
             out.println( attribut );
 
-            String parametre = request.getParameter( "auteur" );
-            out.println( parametre );
+            //String parametre = request.getParameter( "auteur" );
+            //out.println( parametre );
             %>
         </p>
         <p>

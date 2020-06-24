@@ -13,6 +13,7 @@ import com.sdzee.beans.Coyote;
 public class Test extends HttpServlet {
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
 		
+
 		/* Création et initialisation du message. */
 		String paramAuteur = request.getParameter( "auteur" );
 		String message = "Transmission de variables : OK ! " + paramAuteur;
