@@ -13,7 +13,8 @@ namespace Server
         {
 
             String uri = "http://localhost:8010/Server/services";
-            ServiceHost host = new ServiceHost(typeof(CommonLib.CL_Dispatching));
+            //ServiceHost host = new ServiceHost(typeof(CommonLib.CL_Dispatching));
+            ServiceHost host = new ServiceHost(typeof(AuthManager));
             try
             {
                 host.AddServiceEndpoint(typeof(CommonLib.i_Dispatching), new BasicHttpBinding(), uri);

@@ -19,11 +19,23 @@ namespace Client
                 CommonLib.i_Dispatching proxy = ChannelFactory<CommonLib.i_Dispatching>.CreateChannel(new BasicHttpBinding(), ep);
 
                 MSG msg = new CommonLib.MSG();
-                msg.op_name = "add";
-                msg.data = new object[2] { (object)10, (object)20 };
+
+                msg.op_name = "auth";
+                msg.op_infos = "auth user with credentials";
+                msg.op_statut = "pending";
+                msg.op_version = "1.0";
+                msg.app_tocken = "LICENSE_XXX";
+                msg.app_version = "1.0";
+                msg.data = new object[2] {
+                    (object)"user",
+                    (object)"pass"
+                };
 
                 MSG msgReturn = proxy.dispatching(msg);
-                Console.WriteLine(msgReturn.data[0]);
+
+                Console.WriteLine(
+                    msgReturn.op_statut
+                    );
             }
             catch (Exception ex)
             {
