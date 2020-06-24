@@ -10415,30 +10415,11 @@
 									"model": {
 										"$ref": "AAAAAAFy5WTSrF3Azro="
 									},
-									"subViews": [
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAFy5WUxm19J/0w=",
-											"_parent": {
-												"$ref": "AAAAAAFy5WTSrV3ImCM="
-											},
-											"model": {
-												"$ref": "AAAAAAFy5WUxWl9A7DA="
-											},
-											"font": "Arial;13;0",
-											"left": 189,
-											"top": 366,
-											"width": 80.57080078125,
-											"height": 13,
-											"text": "+Bool",
-											"horizontalAlignment": 0
-										}
-									],
 									"font": "Arial;13;0",
 									"left": 184,
 									"top": 361,
 									"width": 90.57080078125,
-									"height": 23
+									"height": 10
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -10461,7 +10442,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 189,
-											"top": 389,
+											"top": 376,
 											"width": 80.57080078125,
 											"height": 13,
 											"text": "+Submit()",
@@ -10470,7 +10451,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 184,
-									"top": 384,
+									"top": 371,
 									"width": 90.57080078125,
 									"height": 23
 								},
@@ -10573,7 +10554,7 @@
 											"font": "Arial;13;1",
 											"left": 189,
 											"top": 239,
-											"width": 71,
+											"width": 77.68896484375,
 											"height": 13,
 											"text": "Input text"
 										},
@@ -10608,7 +10589,7 @@
 									"font": "Arial;13;0",
 									"left": 184,
 									"top": 232,
-									"width": 81,
+									"width": 87.68896484375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFy5WTqUV4YRaM="
@@ -10645,16 +10626,16 @@
 											"font": "Arial;13;0",
 											"left": 189,
 											"top": 262,
-											"width": 71,
+											"width": 77.68896484375,
 											"height": 13,
-											"text": "+String",
+											"text": "+Input: String",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 184,
 									"top": 257,
-									"width": 81,
+									"width": 87.68896484375,
 									"height": 23
 								},
 								{
@@ -10669,7 +10650,7 @@
 									"font": "Arial;13;0",
 									"left": 184,
 									"top": 280,
-									"width": 81,
+									"width": 87.68896484375,
 									"height": 10
 								},
 								{
@@ -10712,7 +10693,7 @@
 							"containerChangeable": true,
 							"left": 184,
 							"top": 232,
-							"width": 81,
+							"width": 87.68896484375,
 							"height": 81,
 							"nameCompartment": {
 								"$ref": "AAAAAAFy5WTqUV4X0IM="
@@ -10845,7 +10826,7 @@
 											"top": 222,
 											"width": 175,
 											"height": 13,
-											"text": "+Bool StatusOp",
+											"text": "+StatusOp: Bool",
 											"horizontalAlignment": 0
 										},
 										{
@@ -10862,7 +10843,7 @@
 											"top": 237,
 											"width": 175,
 											"height": 13,
-											"text": "+String info",
+											"text": "+Info: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -10896,7 +10877,7 @@
 											"top": 267,
 											"width": 175,
 											"height": 13,
-											"text": "+String OperationName",
+											"text": "+OperationName: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -10913,7 +10894,7 @@
 											"top": 282,
 											"width": 175,
 											"height": 13,
-											"text": "+String TokenAppl",
+											"text": "+TokenAppl: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -10930,7 +10911,7 @@
 											"top": 297,
 											"width": 175,
 											"height": 13,
-											"text": "+String TokenUser",
+											"text": "+TokenUser: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -10947,7 +10928,7 @@
 											"top": 312,
 											"width": 175,
 											"height": 13,
-											"text": "+String AppVersion",
+											"text": "+AppVersion: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -10964,7 +10945,7 @@
 											"top": 327,
 											"width": 175,
 											"height": 13,
-											"text": "+String OperationVersion",
+											"text": "+OperationVersion: String",
 											"horizontalAlignment": 0
 										}
 									],
@@ -11379,7 +11360,7 @@
 											"top": 318,
 											"width": 310.349609375,
 											"height": 13,
-											"text": "+Int Timeout",
+											"text": "+Timeout: Int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -11396,7 +11377,7 @@
 											"top": 333,
 											"width": 310.349609375,
 											"height": 13,
-											"text": "+Bool IsAuth",
+											"text": "+IsAuth: Bool",
 											"horizontalAlignment": 0
 										},
 										{
@@ -11413,7 +11394,7 @@
 											"top": 348,
 											"width": 310.349609375,
 											"height": 13,
-											"text": "+String Token",
+											"text": "+Token: String",
 											"horizontalAlignment": 0
 										}
 									],
@@ -11805,7 +11786,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 327,
+									"left": 330,
 									"top": 276,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -11826,7 +11807,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 331,
+									"left": 334,
 									"top": 261,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -11847,7 +11828,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 320,
+									"left": 323,
 									"top": 305,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -11868,8 +11849,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 293,
-									"top": 267,
+									"left": 300,
+									"top": 268,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -11889,8 +11870,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 299,
-									"top": 255,
+									"left": 306,
+									"top": 256,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -11910,8 +11891,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 282,
-									"top": 293,
+									"left": 289,
+									"top": 294,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -11932,7 +11913,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 361,
-									"top": 285,
+									"top": 284,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -11952,7 +11933,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 362,
-									"top": 271,
+									"top": 270,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -11972,7 +11953,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 358,
-									"top": 312,
+									"top": 311,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -12017,7 +11998,7 @@
 								"$ref": "AAAAAAFy5WTqUV4WkSE="
 							},
 							"lineStyle": 1,
-							"points": "265:282;383:312",
+							"points": "272:283;383:311",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFy5Wex/GhgcXk="
@@ -12155,8 +12136,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4CyZZnjdUS8="
 									},
-									"name": "Int Timeout",
-									"type": ""
+									"name": "Timeout",
+									"type": "Int"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12164,8 +12145,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4CyZZnjdUS8="
 									},
-									"name": "Bool IsAuth",
-									"type": ""
+									"name": "IsAuth",
+									"type": "Bool"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12173,8 +12154,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4CyZZnjdUS8="
 									},
-									"name": "String Token",
-									"type": ""
+									"name": "Token",
+									"type": "String"
 								}
 							],
 							"operations": [
@@ -12232,8 +12213,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4C7JjnmdcAQ="
 									},
-									"name": "Bool StatusOp",
-									"type": ""
+									"name": "StatusOp",
+									"type": "Bool"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12241,8 +12222,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4C7JjnmdcAQ="
 									},
-									"name": "String info",
-									"type": ""
+									"name": "Info",
+									"type": "String"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12259,8 +12240,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4C7JjnmdcAQ="
 									},
-									"name": "String OperationName",
-									"type": ""
+									"name": "OperationName",
+									"type": "String"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12268,8 +12249,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4C7JjnmdcAQ="
 									},
-									"name": "String TokenAppl",
-									"type": ""
+									"name": "TokenAppl",
+									"type": "String"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12277,8 +12258,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4C7JjnmdcAQ="
 									},
-									"name": "String TokenUser",
-									"type": ""
+									"name": "TokenUser",
+									"type": "String"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12286,8 +12267,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4C7JjnmdcAQ="
 									},
-									"name": "String AppVersion",
-									"type": ""
+									"name": "AppVersion",
+									"type": "String"
 								},
 								{
 									"_type": "UMLAttribute",
@@ -12295,8 +12276,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy4C7JjnmdcAQ="
 									},
-									"name": "String OperationVersion",
-									"type": ""
+									"name": "OperationVersion",
+									"type": "String"
 								}
 							],
 							"operations": [
@@ -12368,17 +12349,6 @@
 									}
 								}
 							],
-							"attributes": [
-								{
-									"_type": "UMLAttribute",
-									"_id": "AAAAAAFy5WUxWl9A7DA=",
-									"_parent": {
-										"$ref": "AAAAAAFy5WTSrF3Azro="
-									},
-									"name": "Bool",
-									"type": ""
-								}
-							],
 							"operations": [
 								{
 									"_type": "UMLOperation",
@@ -12434,8 +12404,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFy5WTqUV4UjdU="
 									},
-									"name": "String",
-									"type": ""
+									"name": "Input",
+									"type": "String"
 								}
 							]
 						}
