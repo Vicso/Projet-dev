@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sdzee.bdd.Oracle;
 import com.sdzee.beans.Coyote;
 
 public class Test extends HttpServlet {
@@ -27,6 +28,17 @@ public class Test extends HttpServlet {
 		/* Stockage du message et du bean dans l'objet request */
 		request.setAttribute( "test", message );
 		request.setAttribute( "coyote", premierBean );
+		
+		
+		
+		System.out.println("CHECKING DB...");
+		
+		Oracle testOracle = new Oracle();
+
+		
+		
+		
+		
 			
 		/* Transmission de la paire d'objets request/response à notre JSP */
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/test.jsp" ).forward( request, response );
