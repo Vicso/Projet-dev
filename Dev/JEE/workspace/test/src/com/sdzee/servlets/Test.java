@@ -2,6 +2,7 @@ package com.sdzee.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.concurrent.TimeUnit;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sdzee.bdd.Oracle;
 import com.sdzee.beans.Coyote;
+import com.sdzee.jms.MessageReceiver;
+import com.sdzee.jms.MessageSender;
 
 public class Test extends HttpServlet {
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
@@ -36,7 +39,20 @@ public class Test extends HttpServlet {
 		Oracle testOracle = new Oracle();
 
 		
+		System.out.println("TRYNG JMS...");
 		
+		MessageSender ms = new MessageSender();
+		
+		try {
+			TimeUnit.SECONDS.sleep(5);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("READING JMS...");
+		
+		MessageReceiver msr = new MessageReceiver();
 		
 		
 			

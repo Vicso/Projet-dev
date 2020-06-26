@@ -1,0 +1,119 @@
+2020-06-26 09:30:18,477 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4587f105: startup date [Fri Jun 26 09:30:18 CEST 2020]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2020-06-26 09:30:19,423 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:30:19,634 | INFO  | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2020-06-26 09:30:19,808 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:30:19,829 | INFO  | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:30:19,831 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:30:19,838 | INFO  | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:30:19,840 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:30:19,846 | INFO  | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:30:19,848 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:30:19,852 | INFO  | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:30:19,854 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:30:19,861 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 09:30:19,941 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 09:30:20,085 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@5485cb55{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2020-06-26 09:30:20,169 | INFO  | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2020-06-26 09:30:20,170 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:30:20,173 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:30:20,175 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:30:20,181 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64361 mb of usable space. - resetting to maximum available disk space: 64361 mb | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:30:21,120 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2020-06-26 09:30:21,121 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2020-06-26 09:30:34,946 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,955 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,957 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,959 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,960 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,970 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,976 | INFO  | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,977 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,977 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2020-06-26 09:30:34,979 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2020-06-26 09:30:35,012 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) uptime 15.604 seconds | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2020-06-26 09:30:35,021 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2020-06-26 09:30:35,022 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@4587f105: startup date [Fri Jun 26 09:30:18 CEST 2020]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2020-06-26 09:42:52,581 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4587f105: startup date [Fri Jun 26 09:42:52 CEST 2020]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2020-06-26 09:42:53,503 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:42:53,577 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2020-06-26 09:42:53,605 | INFO  | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2020-06-26 09:42:53,773 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52429-1593157373616-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:42:53,793 | INFO  | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:42:53,795 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:42:53,800 | INFO  | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:42:53,802 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:42:53,807 | INFO  | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:42:53,809 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:42:53,815 | INFO  | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 09:42:53,816 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:42:53,822 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 09:42:53,903 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 09:42:54,058 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@3af47f21{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2020-06-26 09:42:54,121 | INFO  | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2020-06-26 09:42:54,123 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 09:42:54,125 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52429-1593157373616-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:42:54,126 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:42:54,131 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64311 mb of usable space. - resetting to maximum available disk space: 64311 mb | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 09:42:55,030 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2020-06-26 09:42:55,031 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2020-06-26 11:07:21,484 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5ca8af0a: startup date [Fri Jun 26 11:07:21 CEST 2020]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2020-06-26 11:07:22,507 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:07:22,569 | INFO  | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2020-06-26 11:07:22,574 | INFO  | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2020-06-26 11:07:22,586 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2020-06-26 11:07:22,616 | INFO  | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2020-06-26 11:07:22,787 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:07:22,809 | INFO  | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:07:22,811 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:07:22,815 | INFO  | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:07:22,817 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:07:22,821 | INFO  | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:07:22,823 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:07:22,827 | INFO  | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:07:22,829 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:07:22,836 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 11:07:22,920 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 11:07:23,075 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@7a698ca1{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2020-06-26 11:07:23,142 | INFO  | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2020-06-26 11:07:23,143 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:07:23,144 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:07:23,146 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:07:23,153 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64600 mb of usable space. - resetting to maximum available disk space: 64600 mb | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:07:24,095 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2020-06-26 11:07:24,096 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2020-06-26 11:17:57,222 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,225 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,226 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,227 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,229 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,239 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,243 | INFO  | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,244 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,244 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,245 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,262 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) uptime 10 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,263 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2020-06-26 11:17:57,264 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@5ca8af0a: startup date [Fri Jun 26 11:07:21 CEST 2020]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2020-06-26 11:20:06,098 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@55a7db2e: startup date [Fri Jun 26 11:20:06 CEST 2020]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2020-06-26 11:20:07,222 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:20:07,316 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2020-06-26 11:20:07,348 | INFO  | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2020-06-26 11:20:07,527 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54537-1593163207367-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:20:07,549 | INFO  | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:20:07,551 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:20:07,556 | INFO  | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:20:07,557 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:20:07,563 | INFO  | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:20:07,565 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:20:07,570 | INFO  | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2020-06-26 11:20:07,572 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:20:07,581 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 11:20:07,660 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | WrapperSimpleAppMain
+2020-06-26 11:20:07,802 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@63a83a0b{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2020-06-26 11:20:07,861 | INFO  | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2020-06-26 11:20:07,863 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2020-06-26 11:20:07,865 | INFO  | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54537-1593163207367-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:20:07,866 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:20:07,872 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64600 mb of usable space. - resetting to maximum available disk space: 64600 mb | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2020-06-26 11:20:08,847 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2020-06-26 11:20:08,848 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain

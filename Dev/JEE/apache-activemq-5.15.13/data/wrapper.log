@@ -1,0 +1,183 @@
+STATUS | wrapper  | 2020/06/26 09:30:09 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/06/26 09:30:09 | Launching a JVM...
+INFO   | jvm 1    | 2020/06/26 09:30:10 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/06/26 09:30:10 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/06/26 09:30:10 | 
+INFO   | jvm 1    | 2020/06/26 09:30:10 | Java Runtime: Oracle Corporation 1.8.0_251 C:\Program Files\Java\jre1.8.0_251
+INFO   | jvm 1    | 2020/06/26 09:30:10 |   Heap sizes: current=251392k  free=236973k  max=932352k
+INFO   | jvm 1    | 2020/06/26 09:30:10 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=4Xo18k0jFcgmOQru -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5088 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/06/26 09:30:10 | Extensions classpath:
+INFO   | jvm 1    | 2020/06/26 09:30:10 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/06/26 09:30:10 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/06/26 09:30:10 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/06/26 09:30:10 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/06/26 09:30:10 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/06/26 09:30:18 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/06/26 09:30:18 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4587f105: startup date [Fri Jun 26 09:30:18 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) is starting
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/06/26 09:30:19 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/06/26 09:30:20 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/06/26 09:30:20 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@5485cb55{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/06/26 09:30:20 |  INFO | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:30:20 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/06/26 09:30:20 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) started
+INFO   | jvm 1    | 2020/06/26 09:30:20 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/06/26 09:30:20 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64361 mb of usable space. - resetting to maximum available disk space: 64361 mb
+INFO   | jvm 1    | 2020/06/26 09:30:21 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/06/26 09:30:21 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+STATUS | wrapper  | 2020/06/26 09:30:33 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) is shutting down
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) uptime 15.604 seconds
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52281-1593156619645-0:1) is shutdown
+INFO   | jvm 1    | 2020/06/26 09:30:35 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@4587f105: startup date [Fri Jun 26 09:30:18 CEST 2020]; root of context hierarchy
+STATUS | wrapper  | 2020/06/26 09:30:35 | <-- Wrapper Stopped
+STATUS | wrapper  | 2020/06/26 09:42:51 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/06/26 09:42:51 | Launching a JVM...
+INFO   | jvm 1    | 2020/06/26 09:42:52 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/06/26 09:42:52 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/06/26 09:42:52 | 
+INFO   | jvm 1    | 2020/06/26 09:42:52 | Java Runtime: Oracle Corporation 1.8.0_251 C:\Program Files\Java\jre1.8.0_251
+INFO   | jvm 1    | 2020/06/26 09:42:52 |   Heap sizes: current=251392k  free=236973k  max=932352k
+INFO   | jvm 1    | 2020/06/26 09:42:52 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=IpY4BkarfmNubTd0 -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=16992 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/06/26 09:42:52 | Extensions classpath:
+INFO   | jvm 1    | 2020/06/26 09:42:52 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/06/26 09:42:52 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/06/26 09:42:52 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/06/26 09:42:52 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/06/26 09:42:52 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/06/26 09:42:52 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/06/26 09:42:52 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4587f105: startup date [Fri Jun 26 09:42:52 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52429-1593157373616-0:1) is starting
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/06/26 09:42:53 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/06/26 09:42:54 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@3af47f21{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/06/26 09:42:54 |  INFO | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 09:42:54 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/06/26 09:42:54 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-52429-1593157373616-0:1) started
+INFO   | jvm 1    | 2020/06/26 09:42:54 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/06/26 09:42:54 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64311 mb of usable space. - resetting to maximum available disk space: 64311 mb
+INFO   | jvm 1    | 2020/06/26 09:42:55 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/06/26 09:42:55 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+STATUS | wrapper  | 2020/06/26 11:07:20 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/06/26 11:07:20 | Launching a JVM...
+INFO   | jvm 1    | 2020/06/26 11:07:21 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/06/26 11:07:21 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/06/26 11:07:21 | 
+INFO   | jvm 1    | 2020/06/26 11:07:21 | Java Runtime: Oracle Corporation 1.8.0_251 C:\Program Files\Java\jre1.8.0_251
+INFO   | jvm 1    | 2020/06/26 11:07:21 |   Heap sizes: current=251392k  free=236973k  max=932352k
+INFO   | jvm 1    | 2020/06/26 11:07:21 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=hGacv7Sye44a2krJ -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=1908 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/06/26 11:07:21 | Extensions classpath:
+INFO   | jvm 1    | 2020/06/26 11:07:21 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/06/26 11:07:21 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/06/26 11:07:21 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/06/26 11:07:21 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/06/26 11:07:21 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/06/26 11:07:21 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/06/26 11:07:21 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5ca8af0a: startup date [Fri Jun 26 11:07:21 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) is starting
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/06/26 11:07:22 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/06/26 11:07:23 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@7a698ca1{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/06/26 11:07:23 |  INFO | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:07:23 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/06/26 11:07:23 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) started
+INFO   | jvm 1    | 2020/06/26 11:07:23 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/06/26 11:07:23 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64600 mb of usable space. - resetting to maximum available disk space: 64600 mb
+INFO   | jvm 1    | 2020/06/26 11:07:24 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/06/26 11:07:24 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+STATUS | wrapper  | 2020/06/26 11:17:55 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) is shutting down
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) uptime 10 minutes
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54306-1593162442628-0:1) is shutdown
+INFO   | jvm 1    | 2020/06/26 11:17:57 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@5ca8af0a: startup date [Fri Jun 26 11:07:21 CEST 2020]; root of context hierarchy
+STATUS | wrapper  | 2020/06/26 11:17:57 | <-- Wrapper Stopped
+STATUS | wrapper  | 2020/06/26 11:20:04 | --> Wrapper Started as Console
+STATUS | wrapper  | 2020/06/26 11:20:04 | Launching a JVM...
+INFO   | jvm 1    | 2020/06/26 11:20:05 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2020/06/26 11:20:05 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2020/06/26 11:20:05 | 
+INFO   | jvm 1    | 2020/06/26 11:20:05 | Java Runtime: Oracle Corporation 1.8.0_251 C:\Program Files\Java\jre1.8.0_251
+INFO   | jvm 1    | 2020/06/26 11:20:05 |   Heap sizes: current=251392k  free=236973k  max=932352k
+INFO   | jvm 1    | 2020/06/26 11:20:05 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=ygRGF4X5IVUj1Cpy -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=17536 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2020/06/26 11:20:05 | Extensions classpath:
+INFO   | jvm 1    | 2020/06/26 11:20:05 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2020/06/26 11:20:05 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2020/06/26 11:20:05 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2020/06/26 11:20:05 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2020/06/26 11:20:05 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2020/06/26 11:20:06 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2020/06/26 11:20:06 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@55a7db2e: startup date [Fri Jun 26 11:20:06 CEST 2020]; root of context hierarchy
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | PListStore:[C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54537-1593163207367-0:1) is starting
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Listening for connections at: tcp://ACER-PREDATOR-GB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Listening for connections at: amqp://ACER-PREDATOR-GB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Listening for connections at: stomp://ACER-PREDATOR-GB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Listening for connections at: mqtt://ACER-PREDATOR-GB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@63a83a0b{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Listening for connections at ws://ACER-PREDATOR-GB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Connector ws started
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | Apache ActiveMQ 5.15.13 (localhost, ID:ACER-PREDATOR-GB-54537-1593163207367-0:1) started
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2020/06/26 11:20:07 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache-activemq-5.15.13\bin\win64\..\..\data\kahadb only has 64600 mb of usable space. - resetting to maximum available disk space: 64600 mb
+INFO   | jvm 1    | 2020/06/26 11:20:08 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2020/06/26 11:20:08 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
