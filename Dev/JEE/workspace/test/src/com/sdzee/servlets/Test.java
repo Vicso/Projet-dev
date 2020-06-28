@@ -2,6 +2,7 @@ package com.sdzee.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 import javax.servlet.ServletException;
@@ -11,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sdzee.bdd.Oracle;
 import com.sdzee.beans.Coyote;
+import com.sdzee.jms.InitJms;
 import com.sdzee.jms.MessageReceiver;
 import com.sdzee.jms.MessageSender;
 
 public class Test extends HttpServlet {
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
 		
-
 		/* Création et initialisation du message. */
 		String paramAuteur = request.getParameter( "auteur" );
 		String message = "Transmission de variables : OK ! " + paramAuteur;
@@ -32,30 +33,36 @@ public class Test extends HttpServlet {
 		request.setAttribute( "test", message );
 		request.setAttribute( "coyote", premierBean );
 		
-		
-		
 		System.out.println("CHECKING DB...");
 		
 		Oracle testOracle = new Oracle();
 
+		System.out.println("STARTING AND INIT JMS...");
 		
-		System.out.println("TRYNG JMS...");
+		InitJms jmsContext = new InitJms();
 		
-		MessageSender ms = new MessageSender();
+		MessageReceiver mrThread = new MessageReceiver();
+		mrThread.start();
 		
-		try {
-			TimeUnit.SECONDS.sleep(5);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		String userInput = "";
+		
+		while(!userInput.equals("stop")) {
+			
+		    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+		    System.out.println("Enter message");
+		    
+		    userInput = myObj.nextLine();  // Read user input
+		    System.out.println("Sending: " + userInput + "...");  // Output user input
+		    
+		    MessageSender ms = new MessageSender(userInput);
+		    
+		    System.out.println("Message sent !");
 		}
 		
-		System.out.println("READING JMS...");
+		System.out.println("Stopping JMS Server...");
 		
-		MessageReceiver msr = new MessageReceiver();
-		
-		
-			
+		jmsContext.closeConnexion();
+
 		/* Transmission de la paire d'objets request/response à notre JSP */
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/test.jsp" ).forward( request, response );
 	}

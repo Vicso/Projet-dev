@@ -21,6 +21,8 @@ namespace Server
                 host.Open();
 
                 Console.WriteLine("Server listening...");
+
+                NMSManager NMS = new NMSManager();
             }
             catch (Exception ex)
             {

@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using NMSLib;
-
 namespace ClientWindows
 {
     public partial class Form1 : Form
@@ -60,13 +58,5 @@ namespace ClientWindows
             cnn.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            NMSInit nms = new NMSInit();
-            /*while (true) ;
-            {
-
-            }*/
-        }
     }
 }

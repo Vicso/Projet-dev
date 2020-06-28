@@ -18,3 +18,11 @@ C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\CommonLib.dll
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\CommonLib.pdb
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\obj\Debug\Server.exe
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\obj\Debug\Server.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\NMSLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\Apache.NMS.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\NMSLib.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\Apache.NMS.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\Apache.NMS.xml
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\Apache.NMS.ActiveMQ.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\Apache.NMS.ActiveMQ.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\Apache.NMS.ActiveMQ.xml

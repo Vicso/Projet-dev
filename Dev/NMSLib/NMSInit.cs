@@ -37,7 +37,6 @@ namespace NMSLib
         //private const string Topic = "topic://App.Message.Chat.Topic";
         private const string Topic = "topic://jms/topic/ITExpertsTopic";
 
-
         /// <summary>
         /// Gets or sets the form title.
         /// </summary>
@@ -53,26 +52,7 @@ namespace NMSLib
         {
             InitializeComms();
             //InitializeComponent();
-            (new Thread(InitialiseListener) { IsBackground = true }).Start();
-        }
-
-        /// <summary>
-        /// Initialises the listener.
-        /// </summary>
-        /// <exception cref="System.NotImplementedException"></exception>
-        private void InitialiseListener()
-        {
-            while (true)
-            {
-
-                Console.WriteLine("wot");
-
-                var message = (ITextMessage)_consumer.Receive();
-                if (message == null) continue;
-                if (string.IsNullOrWhiteSpace(message.Text)) continue;
-
-                Console.WriteLine(message.Text);
-            }
+            
         }
 
         /// <summary>
@@ -94,16 +74,15 @@ namespace NMSLib
             _producer = _session.CreateProducer(topicDestination/*queueDestination*/);
         }
 
-        /// <summary>
-        /// Sends the message to processing queue.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <exception cref="System.NotImplementedException"></exception>
-        private void SendMessageToProcessingQueue(string message)
+        public IMessageProducer getProducer()
         {
-            // Create a text message
-            var request = _producer.CreateTextMessage(message);
-            _producer.Send(request);
+            return _producer;
         }
+
+        public IMessageConsumer getConsumer()
+        {
+            return _consumer;
+        }
+
     }
 }
