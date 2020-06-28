@@ -10,6 +10,8 @@ namespace ClientWindows
 {
     class Session
     {
+        string user_token = "";
+
         public Session()
         {
 
@@ -39,7 +41,7 @@ namespace ClientWindows
 
                 MSG msgReturn = proxy.dispatching(msg);
 
-                string user_token = (string)msgReturn.data[0];
+                user_token = (string)msgReturn.data[0];
 
                 Console.WriteLine(
                     //msgReturn.op_statut
@@ -55,6 +57,55 @@ namespace ClientWindows
             {
                 Console.WriteLine(ex.Message);
                 return "error";
+            }
+        }
+
+        public bool sendFiles(String fileContent)
+        {
+            EndpointAddress ep = new EndpointAddress("http://localhost:8010/Server/services");
+
+            try
+            {
+                CommonLib.i_Dispatching proxy = ChannelFactory<CommonLib.i_Dispatching>.CreateChannel(new BasicHttpBinding(), ep);
+
+                MSG msg = new CommonLib.MSG();
+
+                msg.op_name = "decryptFile";
+                msg.op_infos = "request to decrypt file with user_token";
+                msg.op_statut = "pending";
+                msg.op_version = "1.0";
+                msg.app_tocken = "LICENSE_XXX";
+                msg.app_version = "1.0";
+                msg.data = new object[2] {
+                    (object)user_token,
+                    (object)fileContent
+                };
+
+                MSG msgReturn = proxy.dispatching(msg);
+
+                //user_token = (string)msgReturn.data[0];
+
+                Console.WriteLine(
+                    msgReturn.op_statut
+                    //user_token
+                    );
+
+
+                if (msgReturn.op_statut == "accepted")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
             }
         }
     }
