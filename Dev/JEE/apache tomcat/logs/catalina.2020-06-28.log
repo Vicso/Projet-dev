@@ -1,0 +1,196 @@
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version du serveur:        Apache Tomcat/7.0.103
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Serveur compilé:       Mar 16 2020 08:34:15 UTC
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version du serveur:      7.0.103.0
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Nom de l'OS:           Windows 10
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version de l'OS:        10.0
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Architecture:          amd64
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Répertoire de Java:     C:\Program Files\Java\jre1.8.0_251
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version de la JVM:           1.8.0_251-b08
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Fournisseur de la JVM:            Oracle Corporation
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_BASE:         C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_HOME:         C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\conf\logging.properties
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djdk.tls.ephemeralDHKeySize=2048
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Dignore.endorsed.dirs=
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Dcatalina.base=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Dcatalina.home=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\temp
+juin 28, 2020 1:43:47 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+juin 28, 2020 1:43:47 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+juin 28, 2020 1:43:47 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFOS: OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+juin 28, 2020 1:43:47 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initialisation du gestionnaire de protocole ["http-apr-8080"]
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 638 ms
+juin 28, 2020 1:43:47 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service [Catalina]
+juin 28, 2020 1:43:47 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.103
+juin 28, 2020 1:43:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\docs]
+juin 28, 2020 1:43:49 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:43:50 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+AVERTISSEMENT: La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [400] millisecondes
+juin 28, 2020 1:43:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\docs] de l'application web s'est terminé en [2 726] ms
+juin 28, 2020 1:43:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\examples]
+juin 28, 2020 1:43:52 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:43:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\examples] de l'application web s'est terminé en [2 704] ms
+juin 28, 2020 1:43:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\host-manager]
+juin 28, 2020 1:43:54 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:43:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\host-manager] de l'application web s'est terminé en [1 631] ms
+juin 28, 2020 1:43:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\manager]
+juin 28, 2020 1:43:56 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:43:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\manager] de l'application web s'est terminé en [1 531] ms
+juin 28, 2020 1:43:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\ROOT]
+juin 28, 2020 1:43:57 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:43:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\ROOT] de l'application web s'est terminé en [1 622] ms
+juin 28, 2020 1:43:57 PM org.apache.coyote.AbstractProtocol start
+INFOS: Démarrage du gestionnaire de protocole ["http-apr-8080"]
+juin 28, 2020 1:43:57 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 10281 ms
+juin 28, 2020 1:46:33 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Le gestionnaire de protocole ["http-apr-8080"] est mis en pause
+juin 28, 2020 1:46:33 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service [Catalina]
+juin 28, 2020 1:46:33 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Arrêt du gestionnaire de protocole ["http-apr-8080"]
+juin 28, 2020 1:46:33 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destruction du gestionnaire de protocole ["http-apr-8080"]
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version du serveur:        Apache Tomcat/7.0.103
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Serveur compilé:       Mar 16 2020 08:34:15 UTC
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version du serveur:      7.0.103.0
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Nom de l'OS:           Windows 10
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version de l'OS:        10.0
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Architecture:          amd64
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Répertoire de Java:     C:\Program Files\Java\jre1.8.0_251
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version de la JVM:           1.8.0_251-b08
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Fournisseur de la JVM:            Oracle Corporation
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_BASE:         C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_HOME:         C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\conf\logging.properties
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djdk.tls.ephemeralDHKeySize=2048
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Dignore.endorsed.dirs=
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Dcatalina.base=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Dcatalina.home=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\temp
+juin 28, 2020 1:51:04 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+juin 28, 2020 1:51:04 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+juin 28, 2020 1:51:04 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFOS: OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+juin 28, 2020 1:51:04 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initialisation du gestionnaire de protocole ["http-apr-8080"]
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 651 ms
+juin 28, 2020 1:51:04 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service [Catalina]
+juin 28, 2020 1:51:04 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.103
+juin 28, 2020 1:51:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\docs]
+juin 28, 2020 1:51:06 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:51:07 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+AVERTISSEMENT: La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [454] millisecondes
+juin 28, 2020 1:51:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\docs] de l'application web s'est terminé en [2 809] ms
+juin 28, 2020 1:51:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\examples]
+juin 28, 2020 1:51:09 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:51:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\examples] de l'application web s'est terminé en [2 230] ms
+juin 28, 2020 1:51:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\host-manager]
+juin 28, 2020 1:51:11 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:51:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\host-manager] de l'application web s'est terminé en [1 693] ms
+juin 28, 2020 1:51:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\manager]
+juin 28, 2020 1:51:13 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:51:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\manager] de l'application web s'est terminé en [1 613] ms
+juin 28, 2020 1:51:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\ROOT]
+juin 28, 2020 1:51:14 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:51:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\ROOT] de l'application web s'est terminé en [1 710] ms
+juin 28, 2020 1:51:14 PM org.apache.coyote.AbstractProtocol start
+INFOS: Démarrage du gestionnaire de protocole ["http-apr-8080"]
+juin 28, 2020 1:51:14 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 10121 ms
+juin 28, 2020 1:51:24 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Déploiement de l'archive [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\test.war] de l'application web
+juin 28, 2020 1:51:26 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+juin 28, 2020 1:51:26 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Le déploiement de l'archive de l'application web [C:\Users\guill\Documents\GitHub\Projet-dev\Dev\JEE\apache tomcat\webapps\test.war] s'est terminé en [1 815] ms
+juin 28, 2020 1:56:21 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Le gestionnaire de protocole ["http-apr-8080"] est mis en pause
+juin 28, 2020 1:56:21 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service [Catalina]
+juin 28, 2020 1:56:21 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [/test] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak.
+juin 28, 2020 1:56:21 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Arrêt du gestionnaire de protocole ["http-apr-8080"]
+juin 28, 2020 1:56:21 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destruction du gestionnaire de protocole ["http-apr-8080"]

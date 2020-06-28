@@ -22,6 +22,8 @@ namespace Server
 
                 Console.WriteLine("Server listening...");
 
+                DBManager dbm = new DBManager();
+
                 NMSManager NMS = new NMSManager();
             }
             catch (Exception ex)
