@@ -1,16 +1,22 @@
-﻿using System;
+﻿using CommonLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using CommonLib;
 
-namespace Client
+namespace ClientWindows
 {
-    class Program
+    class Session
     {
-        static void Main(string[] args)
+        public Session()
+        {
+
+
+        }
+
+        public String tryAuth(String user, String password)
         {
             EndpointAddress ep = new EndpointAddress("http://localhost:8010/Server/services");
 
@@ -27,22 +33,29 @@ namespace Client
                 msg.app_tocken = "LICENSE_XXX";
                 msg.app_version = "1.0";
                 msg.data = new object[2] {
-                    (object)"user",
-                    (object)"pass"
+                    (object)user,
+                    (object)password
                 };
 
                 MSG msgReturn = proxy.dispatching(msg);
 
+                string user_token = (string)msgReturn.data[0];
+
                 Console.WriteLine(
-                    msgReturn.op_statut
+                    //msgReturn.op_statut
+                    user_token
                     );
+
+
+                return user_token;
+
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                return "error";
             }
-
-            Console.Read();
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Server
 
                 DBManager dbm = new DBManager();
 
-                NMSManager NMS = new NMSManager();
+                //NMSManager NMS = new NMSManager();
             }
             catch (Exception ex)
             {

@@ -12,14 +12,14 @@ namespace Server
         public MSG dispatching(MSG msg)
         {
 
-            if (msg.app_tocken == "LICENSE_XXX")
+            /*if (msg.app_tocken == "LICENSE_XXX")
             {
 
             }
             else
             {
                 msg.op_statut = "denied";
-            }
+            }*/
 
 
             if (msg.op_name == "auth")
@@ -50,15 +50,39 @@ namespace Server
         public string m_auth(string user, string pass)
         {
 
+            DBManager dbm = new DBManager();
+
             string user_token = "";
 
-            if (user == "user" && pass == "pass")
+            if (dbm.db_actionConnectUser(user, pass))
             {
-                user_token = "TOKEN_OK";
+                //user_token = Convert.ToBase64String(Guid.NewGuid().ToByteArray());
+                byte[] time = BitConverter.GetBytes(DateTime.UtcNow.ToBinary());
+                byte[] key = Guid.NewGuid().ToByteArray();
+                user_token = Convert.ToBase64String(time.Concat(key).ToArray());
+            }
+            else
+            {
+                return user_token;
             }
 
+            dbm.db_actionStoreUserToken(user, user_token);
 
             return user_token;
+        }
+
+        public bool isUserTokenStillValid(String user_token)
+        {
+            byte[] data = Convert.FromBase64String(user_token);
+            DateTime when = DateTime.FromBinary(BitConverter.ToInt64(data, 0));
+            if (when < DateTime.UtcNow.AddHours(-24))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

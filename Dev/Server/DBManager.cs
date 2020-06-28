@@ -13,6 +13,10 @@ namespace Server
         public DBManager()
         {
 
+        }
+
+        public SqlConnection initDbConnection()
+        {
             string connetionString;
             SqlConnection cnn;
 
@@ -23,35 +27,59 @@ namespace Server
 
             Console.WriteLine("Connection Open  !");
 
-            db_action(cnn);
-
-
+            return(cnn);
         }
 
-        private void db_action(SqlConnection cnn)
+        public bool db_actionConnectUser(String user, String pass)
         {
+            SqlConnection cnn = initDbConnection();
+
             SqlCommand command;
             SqlDataReader dataReader;
             String sql, Output = "";
 
-            sql = "SELECT [username],[password] FROM [user]";
-
+            sql = "SELECT * FROM [user] WHERE [username] LIKE '"+ user + "' AND [password] LIKE '" + pass + "'";
             command = new SqlCommand(sql, cnn);
-
             dataReader = command.ExecuteReader();
 
             while (dataReader.Read())
             {
-                Output = Output + dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + "\n";
+                Output = Output + dataReader.GetValue(0);
             }
-
-            Console.WriteLine(Output);
 
             dataReader.Close();
             command.Dispose();
             cnn.Close();
+
+            if (Output != "")
+            {
+                Console.WriteLine("Succesfully connected " + Output);
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Connection error : Bad credential");
+                return false;
+            }
+
         }
 
+        public void db_actionStoreUserToken(String user, String user_token)
+        {
+            SqlConnection cnn = initDbConnection();
+
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql;
+
+            sql = "UPDATE [user] SET user_token = '"+ user_token + "' WHERE [username] LIKE '"+ user + "'";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            command.Dispose();
+            cnn.Close();
+
+        }
 
     }
 }

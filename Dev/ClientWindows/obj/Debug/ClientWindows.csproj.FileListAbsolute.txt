@@ -8,3 +8,6 @@ C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWin
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.csproj.CoreCompileInputs.cache
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.exe
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\bin\Debug\CommonLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\bin\Debug\CommonLib.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\ClientWindows\obj\Debug\ClientWindows.csproj.CopyComplete
