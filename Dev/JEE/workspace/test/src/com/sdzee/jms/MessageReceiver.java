@@ -9,6 +9,8 @@ import javax.jms.Topic;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
+import com.sdzee.checkFile.CheckFile;
+
 public class MessageReceiver extends Thread {
 
 	protected static final String url = "tcp://localhost:61617";
@@ -37,6 +39,11 @@ public class MessageReceiver extends Thread {
 		 while (true) {
 			 TextMessage message = (TextMessage) consumer.receive();
 			 System.out.println("RECEIVED : " + message.getText());
+			 
+			 String file = message.getText();
+			 CheckFile cf = new CheckFile();
+			 cf.analysFile(file);
+			 
 		 }
 		 
 		 } catch (Exception e) {

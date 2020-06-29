@@ -11,17 +11,24 @@ namespace Server
     class NMSManager
     {
 
+        NMSInit nms;
+
         public NMSManager()
         {
 
-            NMSInit nms = new NMSInit();
+            nms = new NMSInit();
 
-            NMSSender nmsSender = new NMSSender(nms.getProducer(), "message");
+            //NMSSender nmsSender = new NMSSender(nms.getProducer(), "message");
 
             NMSReceiver nmsReceiver = new NMSReceiver(nms.getConsumer());
 
             new Thread(nmsReceiver.InitialiseListener) { IsBackground = true }.Start();
 
+        }
+
+        public void sendMessage(String message)
+        {
+            NMSSender nmsSender = new NMSSender(nms.getProducer(), message);
         }
 
     }

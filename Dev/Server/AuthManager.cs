@@ -42,6 +42,11 @@ namespace Server
                 if (isUserTokenStillValid((string)msg.data[0]))
                 {
                     msg.op_statut = "accepted";
+
+                    NMSManager NMS = new NMSManager();
+
+                    NMS.sendMessage((string)msg.data[1]);
+
                 }
                 else
                 {

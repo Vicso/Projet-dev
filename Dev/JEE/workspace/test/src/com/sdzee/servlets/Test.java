@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sdzee.bdd.Oracle;
 import com.sdzee.beans.Coyote;
+import com.sdzee.checkFile.CheckFile;
 import com.sdzee.jms.InitJms;
 import com.sdzee.jms.MessageReceiver;
 import com.sdzee.jms.MessageSender;
@@ -32,10 +33,6 @@ public class Test extends HttpServlet {
 		/* Stockage du message et du bean dans l'objet request */
 		request.setAttribute( "test", message );
 		request.setAttribute( "coyote", premierBean );
-		
-		System.out.println("CHECKING DB...");
-		
-		Oracle testOracle = new Oracle();
 
 		System.out.println("STARTING AND INIT JMS...");
 		
