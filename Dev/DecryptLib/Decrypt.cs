@@ -9,13 +9,13 @@ using System.Data;
 using System.Runtime.CompilerServices;
 using System.Runtime;
 using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
+//using System.Reflection.Metadata.Ecma335;
 using System.Threading;
 using System.Linq;
 
-namespace test_xor
+namespace DecryptLib
 {
-    class Decrypt
+    public class Decrypt
     {
 
         //Boucle qui génère les clés (456976)
@@ -57,8 +57,16 @@ namespace test_xor
 
         public string calcXor(string text, string key)
         {
+
+            int limit = 1000;
+
+            if (text.Length < 1000)
+            {
+                limit = text.Length;
+            }
+
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < limit/*text.Length*/; i++)
             {
                 sb.Append((char)(text[i] ^ key[(i % key.Length)]));
             }

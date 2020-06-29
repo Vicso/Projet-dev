@@ -4,6 +4,7 @@ import javax.jms.Connection;
 import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MessageProducer;
+import javax.jms.ObjectMessage;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 
@@ -18,17 +19,18 @@ public class MessageSender {
 		 Connection connection = null;
 		 try {
 
-			 ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory(
-			 url);
-			 
+			 ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory(url);
+			 //factory.setTrustAllPackages(true);
 			 connection = factory.createConnection();
 			 Session session = connection.createSession(false,
 			 Session.AUTO_ACKNOWLEDGE);
 			 Destination destination = session.createTopic("jms/topic/ITExpertsTopic");	 
 			 MessageProducer producer = session.createProducer(destination);
 			 TextMessage msg = session.createTextMessage();
+			 //ObjectMessage msg = session.createObjectMessage();
 			 String input = messageToSend;
 			 msg.setText(input);
+			 //msg.setObject(input);
 			 producer.send(msg);
 		 } catch (Exception e) {
 			 e.printStackTrace();

@@ -20,13 +20,13 @@ namespace Server
 
             //NMSSender nmsSender = new NMSSender(nms.getProducer(), "message");
 
-            NMSReceiver nmsReceiver = new NMSReceiver(nms.getConsumer());
+            /*NMSReceiver nmsReceiver = new NMSReceiver(nms.getConsumer());
 
-            new Thread(nmsReceiver.InitialiseListener) { IsBackground = true }.Start();
+            new Thread(nmsReceiver.InitialiseListener) { IsBackground = true }.Start();*/
 
         }
 
-        public void sendMessage(String message)
+        public void sendMessage(/*String message*/List<String> message)
         {
             NMSSender nmsSender = new NMSSender(nms.getProducer(), message);
         }

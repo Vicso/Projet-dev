@@ -17,7 +17,10 @@ namespace Server
             ServiceHost host = new ServiceHost(typeof(AuthManager));
             try
             {
-                host.AddServiceEndpoint(typeof(CommonLib.i_Dispatching), new BasicHttpBinding(), uri);
+                host.AddServiceEndpoint(typeof(CommonLib.i_Dispatching), new BasicHttpBinding() {
+                    MaxBufferSize = int.MaxValue,
+                    MaxReceivedMessageSize = int.MaxValue,
+                }, uri);
                 host.Open();
 
                 Console.WriteLine("Server listening...");

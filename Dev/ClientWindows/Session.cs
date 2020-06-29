@@ -66,7 +66,12 @@ namespace ClientWindows
 
             try
             {
-                CommonLib.i_Dispatching proxy = ChannelFactory<CommonLib.i_Dispatching>.CreateChannel(new BasicHttpBinding(), ep);
+                CommonLib.i_Dispatching proxy = ChannelFactory<CommonLib.i_Dispatching>.CreateChannel(new BasicHttpBinding() {
+                    MaxBufferSize = int.MaxValue,
+                    MaxReceivedMessageSize = int.MaxValue, 
+                    ReceiveTimeout = new TimeSpan(0, 10, 0),
+                    SendTimeout = new TimeSpan(0, 10, 0)
+                } , ep);
 
                 MSG msg = new CommonLib.MSG();
 

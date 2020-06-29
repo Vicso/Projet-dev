@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AuthManager.cs" />
     <Compile Include="DBManager.cs" />
+    <Compile Include="DecryptManager.cs" />
     <Compile Include="NMSManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +65,10 @@
     <ProjectReference Include="..\CommonLib\CommonLib.csproj">
       <Project>{7a2a8385-048a-42b4-9d00-fc5fa48f7304}</Project>
       <Name>CommonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DecryptLib\DecryptLib.csproj">
+      <Project>{e4f544e0-624d-4a0d-931e-14c45530605c}</Project>
+      <Name>DecryptLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\NMSLib\NMSLib.csproj">
       <Project>{6713aae9-8f45-4224-a82c-f0620f255d89}</Project>

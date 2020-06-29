@@ -24,3 +24,4 @@ C:\Users\guill\Documents\GitHub\Projet-dev\Dev\NMSLib\bin\Debug\NMSLib.dll
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\NMSLib\bin\Debug\NMSLib.pdb
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\NMSLib\obj\Debug\NMSLib.dll
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\NMSLib\obj\Debug\NMSLib.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\NMSLib\bin\Debug\NMSLib.dll.config

@@ -1,0 +1,6 @@
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\DecryptLib\bin\Debug\DecryptLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\DecryptLib\bin\Debug\DecryptLib.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\DecryptLib\obj\Debug\DecryptLib.csprojAssemblyReference.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\DecryptLib\obj\Debug\DecryptLib.csproj.CoreCompileInputs.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\DecryptLib\obj\Debug\DecryptLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\DecryptLib\obj\Debug\DecryptLib.pdb

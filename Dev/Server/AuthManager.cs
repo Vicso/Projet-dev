@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CommonLib;
+using DecryptLib;
 
 namespace Server
 {
@@ -43,9 +44,13 @@ namespace Server
                 {
                     msg.op_statut = "accepted";
 
-                    NMSManager NMS = new NMSManager();
+                    DecryptManager DecManager = new DecryptManager();
 
-                    NMS.sendMessage((string)msg.data[1]);
+                    DecManager.initDecrypt((string)msg.data[1]);
+
+                    /*NMSManager NMS = new NMSManager();
+
+                    NMS.sendMessage((string)msg.data[1]);*/
 
                 }
                 else
