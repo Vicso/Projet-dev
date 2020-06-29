@@ -81,5 +81,39 @@ namespace Server
 
         }
 
+        public bool db_actionCheckValidToken(String user_token)
+        {
+            SqlConnection cnn = initDbConnection();
+
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql, Output = "";
+
+            sql = "SELECT * FROM [user] WHERE [user_token] LIKE '" + user_token + "'";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                Output = Output + dataReader.GetValue(0);
+            }
+
+            dataReader.Close();
+            command.Dispose();
+            cnn.Close();
+
+            if (Output != "")
+            {
+                Console.WriteLine("Succesfully connected " + Output);
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Connection error : Bad credential");
+                return false;
+            }
+
+        }
+
     }
 }

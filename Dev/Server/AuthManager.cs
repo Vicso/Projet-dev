@@ -90,7 +90,16 @@ namespace Server
                 }
                 else
                 {
-                    return true;
+                    DBManager dbm = new DBManager();
+
+                    if (dbm.db_actionCheckValidToken(user_token))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
             catch (Exception ex)
