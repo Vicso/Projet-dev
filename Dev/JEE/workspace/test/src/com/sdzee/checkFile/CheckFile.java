@@ -2,7 +2,11 @@ package com.sdzee.checkFile;
 
 import java.util.ArrayList;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sdzee.bdd.Oracle;
+import com.sdzee.jms.JMSMessage;
+import com.sdzee.jms.MessageSender;
 
 public class CheckFile {
 	
@@ -23,7 +27,7 @@ public class CheckFile {
 		dictionary = testOracle.retrieveDictionary();
 	}
 	
-	public void analysFile(String file) {
+	public void analysFile(String file, String key) {
 		
 		int totalWords;
 		int occurenceNumber = 0;
@@ -33,22 +37,38 @@ public class CheckFile {
 		totalWords = words.length;
 		
 		for(int i = 0; i < words.length; i++) {
-			
-			//System.out.println(words[i]);
-			
 		      for (String element : dictionary){
 		          if (element.equals(words[i])){
-		                //System.out.println(element);
-		                //System.out.println("FOUND" + words[i]);
 		                occurenceNumber++;
 		          }
 		       }
-			//System.out.println(dictionary.get(i));
 		}
 		
 		if(occurenceNumber > 0) {
-			if(totalWords / occurenceNumber >= 1.5) {
-				System.out.println("good");
+			if(totalWords / occurenceNumber <= 2.5) {
+				System.out.println("good" + key);
+				System.out.println(file);
+				
+				JMSMessage jmsMsg = new JMSMessage();
+				
+				String[] test;
+				
+				jmsMsg.data = new ArrayList<String>();
+				jmsMsg.keys = new ArrayList<String>();
+				
+				jmsMsg.data.add(file);
+				jmsMsg.keys.add(key);
+				jmsMsg.ID = 2;
+				
+				String MsgAsStrmsging="";
+				try {
+					MsgAsStrmsging = new ObjectMapper().writeValueAsString(jmsMsg);
+				} catch (JsonProcessingException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				MessageSender ms = new MessageSender(MsgAsStrmsging);
 			}else {
 				System.out.println("not bad not terrible" + totalWords + occurenceNumber);
 			}

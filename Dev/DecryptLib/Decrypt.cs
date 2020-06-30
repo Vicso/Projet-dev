@@ -50,7 +50,11 @@ namespace DecryptLib
                 {
                     break;
                 }
-                keyStringTable.Add(firstKey[0].ToString() + "" + firstKey[1].ToString() + "" + firstKey[2].ToString() + "" + firstKey[3].ToString());
+                //keyStringTable.Add(firstKey[0].ToString() + "" + firstKey[1].ToString() + "" + firstKey[2].ToString() + "" + firstKey[3].ToString());
+                //Console.WriteLine(Convert.ToChar(firstKey[0]) + "" + Convert.ToChar(firstKey[1]) + "" + Convert.ToChar(firstKey[2]) + "" + Convert.ToChar(firstKey[3]));
+                keyStringTable.Add(Convert.ToChar(firstKey[0]) + "" + Convert.ToChar(firstKey[1]) + "" + Convert.ToChar(firstKey[2]) + "" + Convert.ToChar(firstKey[3]));
+
+
             }
             return keyStringTable;
         }

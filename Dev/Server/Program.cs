@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DecryptLib;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
@@ -11,6 +13,24 @@ namespace Server
     {
         static void Main(string[] args)
         {
+
+            /*string key = "cesi";
+            string text = "ce projet pu la merde";
+
+            string readText = File.ReadAllText(@"C:\Users\guill\Desktop\test.txt");
+            Console.WriteLine(readText);
+
+            Decrypt d = new Decrypt();
+            string decodedText = d.calcXor(readText, key);
+
+            Console.WriteLine(decodedText);
+
+            using (StreamWriter writer = new StreamWriter(@"C:\Users\guill\Desktop\arabe.txt"))
+            {
+                writer.WriteLine(decodedText);
+            }*/
+            // Read a file  
+
 
             String uri = "http://localhost:8010/Server/services";
             //ServiceHost host = new ServiceHost(typeof(CommonLib.CL_Dispatching));

@@ -16,10 +16,10 @@ namespace NMSLib
     {
         IMessageProducer _producer;
 
-        public NMSSender(IMessageProducer producer, /*string message*/List<String> message)
+        public NMSSender(IMessageProducer producer, /*string message*/List<String> message, List<String> keys)
         {
             _producer = producer;
-            SendMessageToProcessingQueue(message);
+            SendMessageToProcessingQueue(message, keys);
         }
 
         /// <summary>
@@ -27,15 +27,17 @@ namespace NMSLib
         /// </summary>
         /// <param name="message">The message.</param>
         /// <exception cref="System.NotImplementedException"></exception>
-        private void SendMessageToProcessingQueue(/*string message*/List<String> message)
+        private void SendMessageToProcessingQueue(/*string message*/List<String> message, List<String> keys)
         {
             NMSMessage t = new NMSMessage();
             t.ID = 1;
             t.data = new string[message.Count];
+            t.keys = new string[keys.Count];
 
             for (int i = 0; i < message.Count; i++)
             {
                 t.data[i] = message[i];
+                t.keys[i] = keys[i];
                 //Console.WriteLine(t.data[i]);
             }
 

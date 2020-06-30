@@ -81,12 +81,18 @@ public class MessageReceiver extends Thread {
 					      JMSMessage itemWithOwner = new ObjectMapper().readValue(text, JMSMessage.class);
 					      //System.out.println(itemWithOwner.data.get(0));
 					      
-					        for( String value : itemWithOwner.data ) {
+					        /*for( String value : itemWithOwner.data ) {
 								  String file = value;
-								  cf.analysFile(file);
-					        }
-					      
-
+								  cf.analysFile(file, );
+					        }*/
+					        
+					      	if(itemWithOwner.ID == 1) {
+						        for(int i = 0; i < itemWithOwner.data.size(); i++) {
+									  String file = itemWithOwner.data.get(i);
+									  String key = itemWithOwner.keys.get(i);
+									  cf.analysFile(file, key);
+						        }
+					      	}
 					    }
 
 					  } catch (JMSException jmsEx) {
