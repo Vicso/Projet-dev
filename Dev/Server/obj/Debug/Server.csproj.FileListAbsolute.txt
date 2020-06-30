@@ -29,3 +29,8 @@ C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\Apache.NMS.Activ
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\DecryptLib.dll
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\DecryptLib.pdb
 C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\NMSLib.dll.config
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\SendMailLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\PdfSharp.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\SendMailLib.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\PdfSharp.xml
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\Server\bin\Debug\de\PdfSharp.resources.dll

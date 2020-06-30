@@ -10,12 +10,15 @@ namespace NMSLib
 
     public class NMSReceiver
     {
+        int _id;
 
         IMessageConsumer _consumer;
 
-        public NMSReceiver(IMessageConsumer consumer)
+        public NMSReceiver(IMessageConsumer consumer, int id)
         {
             _consumer = consumer;
+            _id = id;
+            Console.WriteLine("id is "+ _id);
         }
 
         /// <summary>
@@ -27,7 +30,7 @@ namespace NMSLib
             while (true)
             {
 
-                Console.WriteLine("wot");
+                
 
                 var message = (ITextMessage)_consumer.Receive();
                 if (message == null) continue;
@@ -39,7 +42,9 @@ namespace NMSLib
                 deserializedUser = ser2.ReadObject(ms) as NMSMessage;
                 ms.Close();
 
-                if (deserializedUser.ID == 2)
+                Console.WriteLine("wot" + deserializedUser.ID);
+
+                if (deserializedUser.ID == _id)
                 {
                     return deserializedUser;
                     //callback(1);

@@ -12,18 +12,23 @@ namespace Server
 
         public bool stop = false;
 
-        public DecryptManager ()
-        {
+        string _text;
 
+        public DecryptManager (String text)
+        {
+            _text = text;
         }
 
-        public void initDecrypt(String text)
+        public void initDecrypt()
         {
 
             int[] firstKey = { 65, 65, 65, 65 };  // A,A,A,A
             int[] finalKey = { 90, 90, 90, 90 };  // Z,Z,Z,Z
 
-            NMSManager NMS = new NMSManager(this);
+            Random random = new Random();
+            int userId = random.Next(1000);
+
+            NMSManager NMS = new NMSManager(this, _text, userId);
 
             NMS.listenSuccessMessage();
 
@@ -51,7 +56,7 @@ namespace Server
                     break;
                 }
 
-                String test2 = decrypt.calcXor(text, key);
+                String test2 = decrypt.calcXor(_text, key, true);
 
                 Texts100.Add(test2);
                 Keys100.Add(key);

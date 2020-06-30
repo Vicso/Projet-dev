@@ -90,7 +90,7 @@ public class MessageReceiver extends Thread {
 						        for(int i = 0; i < itemWithOwner.data.size(); i++) {
 									  String file = itemWithOwner.data.get(i);
 									  String key = itemWithOwner.keys.get(i);
-									  cf.analysFile(file, key);
+									  cf.analysFile(file, key, itemWithOwner.userId);
 						        }
 					      	}
 					    }

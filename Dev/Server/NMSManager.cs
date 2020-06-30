@@ -8,49 +8,30 @@ using System.Threading.Tasks;
 
 namespace Server
 {
-    //public delegate void ExampleCallback(int lineCount);
-
     class NMSManager
     {
-
         NMSInit nms;
         DecryptManager _dm;
+        String _initialMessage;
+        int _id;
 
-        public NMSManager(DecryptManager dm)
+        public NMSManager(DecryptManager dm, String initialMessage, int id)
         {
-
             nms = new NMSInit();
-
             _dm = dm;
-
-            //NMSSender nmsSender = new NMSSender(nms.getProducer(), "message");
-
-
-
+            _initialMessage = initialMessage;
+            _id = id;
         }
 
-        public void sendMessage(/*String message*/List<String> message, List<String> keys)
+        public void sendMessage(List<String> message, List<String> keys)
         {
-            NMSSender nmsSender = new NMSSender(nms.getProducer(), message, keys);
+            NMSSender nmsSender = new NMSSender(nms.getProducer(), message, keys, _id);
         }
 
         public void listenSuccessMessage()
         {
-            NMSMessage msg;
-
-            //NMSReceiver nmsReceiver = new NMSReceiver(nms.getConsumer());
-
-            ReceiveMessage rm = new ReceiveMessage(nms, _dm);
-
+            ReceiveMessage rm = new ReceiveMessage(nms, _dm, _initialMessage, _id);
             new Thread(rm.run) { IsBackground = true }.Start();
-
-            /*Thread thread = new Thread(() => { msg = nmsReceiver.InitialiseListener();});
-            thread.Start();
-            thread.Join();*/
-
-
         }
-
-
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using CommonLib;
 using DecryptLib;
@@ -44,13 +45,13 @@ namespace Server
                 {
                     msg.op_statut = "accepted";
 
-                    DecryptManager DecManager = new DecryptManager();
+                    /*DecryptManager DecManager = new DecryptManager();
 
-                    DecManager.initDecrypt((string)msg.data[1]);
+                    DecManager.initDecrypt((string)msg.data[1]);*/
 
-                    /*NMSManager NMS = new NMSManager();
+                    DecryptManager DecManager = new DecryptManager((string)msg.data[1]);
 
-                    NMS.sendMessage((string)msg.data[1]);*/
+                    new Thread(DecManager.initDecrypt) { IsBackground = true }.Start();
 
                 }
                 else

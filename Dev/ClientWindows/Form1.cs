@@ -129,6 +129,11 @@ namespace ClientWindows
                 label6.Text = "Success !";
                 label6.ForeColor = Color.Green;
             }
+            else
+            {
+                label6.Text = "Error ! Your session is probably invalid";
+                label6.ForeColor = Color.Red;
+            }
         }
     }
 }

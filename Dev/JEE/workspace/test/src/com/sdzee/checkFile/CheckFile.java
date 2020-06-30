@@ -27,7 +27,7 @@ public class CheckFile {
 		dictionary = testOracle.retrieveDictionary();
 	}
 	
-	public void analysFile(String file, String key) {
+	public void analysFile(String file, String key, int userId) {
 		
 		int totalWords;
 		int occurenceNumber = 0;
@@ -58,7 +58,7 @@ public class CheckFile {
 				
 				jmsMsg.data.add(file);
 				jmsMsg.keys.add(key);
-				jmsMsg.ID = 2;
+				jmsMsg.ID = userId;
 				
 				String MsgAsStrmsging="";
 				try {
@@ -75,7 +75,7 @@ public class CheckFile {
 		}
 		
 		if(resetIndex > 100) {
-			System.out.println("done checking " + currentIndex);
+			System.out.println("done checking " + currentIndex + "----UID : " + userId);
 			resetIndex = 0;
 		}
 		

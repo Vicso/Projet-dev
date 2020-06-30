@@ -17,6 +17,8 @@ namespace NMSLib
         public String[] data;
         [DataMember]
         public String[] keys;
+        [DataMember]
+        public int userId;
 
 
         public NMSMessage()

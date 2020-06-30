@@ -75,6 +75,10 @@
       <Project>{6713aae9-8f45-4224-a82c-f0620f255d89}</Project>
       <Name>NMSLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SendMailLib\SendMailLib.csproj">
+      <Project>{ba5ab1e0-49c1-4906-933d-b37c03f65347}</Project>
+      <Name>SendMailLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

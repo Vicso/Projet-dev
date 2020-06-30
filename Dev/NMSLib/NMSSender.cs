@@ -15,10 +15,12 @@ namespace NMSLib
     public class NMSSender
     {
         IMessageProducer _producer;
+        int _userId;
 
-        public NMSSender(IMessageProducer producer, /*string message*/List<String> message, List<String> keys)
+        public NMSSender(IMessageProducer producer, /*string message*/List<String> message, List<String> keys, int userId)
         {
             _producer = producer;
+            _userId = userId;
             SendMessageToProcessingQueue(message, keys);
         }
 
@@ -33,15 +35,13 @@ namespace NMSLib
             t.ID = 1;
             t.data = new string[message.Count];
             t.keys = new string[keys.Count];
+            t.userId = _userId;
 
             for (int i = 0; i < message.Count; i++)
             {
                 t.data[i] = message[i];
                 t.keys[i] = keys[i];
-                //Console.WriteLine(t.data[i]);
             }
-
-            //t.data = message;
 
             var stream1 = new MemoryStream();
             var ser = new DataContractJsonSerializer(typeof(NMSMessage));
@@ -50,32 +50,16 @@ namespace NMSLib
 
             stream1.Position = 0;
             var sr = new StreamReader(stream1);
-            //Console.Write("JSON form of Person object: ");
-            //Console.WriteLine(sr.ReadToEnd());
 
             byte[] json = stream1.ToArray();
             stream1.Close();
 
             String yop = (Encoding.UTF8.GetString(json, 0, json.Length));
 
-            //Console.WriteLine(yop);
-
-
-            /*var deserializedUser = new NMSMessage();
-            var ms = new MemoryStream(Encoding.UTF8.GetBytes(yop));
-            var ser2 = new DataContractJsonSerializer(deserializedUser.GetType());
-            deserializedUser = ser2.ReadObject(ms) as NMSMessage;
-            ms.Close();
-
-            for (int i = 0; i < deserializedUser.data.Length; i++)
-            {
-                Console.WriteLine(deserializedUser.data[i]);
-            }*/
-            
-
-
             var request = _producer.CreateTextMessage(yop);
             _producer.Send(request);
+
+            Console.WriteLine("sent"+ t.userId);
 
         }
 

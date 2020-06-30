@@ -59,11 +59,19 @@ namespace DecryptLib
             return keyStringTable;
         }
 
-        public string calcXor(string text, string key)
+        public string calcXor(string text, string key, bool limitText)
         {
+            int limit;
 
-            int limit = 1000;
-
+            if (limitText)
+            {
+                limit = 1000;
+            }
+            else
+            {
+                limit = text.Length;
+            }
+            
             if (text.Length < 1000)
             {
                 limit = text.Length;

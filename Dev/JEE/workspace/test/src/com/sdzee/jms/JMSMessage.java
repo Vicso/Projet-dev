@@ -7,6 +7,7 @@ public class JMSMessage {
     public int ID;
     public ArrayList<String> data;
     public ArrayList<String> keys;
+    public int userId;
 
     public JMSMessage()
     {

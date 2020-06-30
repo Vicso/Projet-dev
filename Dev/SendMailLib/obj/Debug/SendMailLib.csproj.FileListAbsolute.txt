@@ -1,0 +1,13 @@
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\SendMailLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\SendMailLib.pdb
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\PdfSharp.Charting.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\PdfSharp.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\PdfSharp.xml
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\PdfSharp.Charting.xml
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\obj\Debug\SendMailLib.csprojAssemblyReference.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\obj\Debug\SendMailLib.csproj.CoreCompileInputs.cache
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\obj\Debug\SendMailLib.csproj.CopyComplete
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\obj\Debug\SendMailLib.dll
+C:\Users\guill\Documents\GitHub\Projet-dev\Dev\SendMailLib\obj\Debug\SendMailLib.pdb
