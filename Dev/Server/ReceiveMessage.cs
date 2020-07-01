@@ -31,6 +31,7 @@ namespace Server
             if (returnMsg.ID == _id)
             {
                 _dm.stop = true;
+                _nms.closeSession();
                 Console.WriteLine("Decrypted KEY :" + returnMsg.keys[0]);
                 
                 Decrypt dl = new Decrypt();

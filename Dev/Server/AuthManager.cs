@@ -39,7 +39,7 @@ namespace Server
 
                 msg.data = new object[1] { (object)user_token };
             }
-            else if (msg.op_name == "decryptFile")
+            else if (msg.op_name == "decryptFile") // probleme de memoire...
             {
                 if (isUserTokenStillValid((string)msg.data[0]))
                 {
@@ -50,8 +50,12 @@ namespace Server
                     DecManager.initDecrypt((string)msg.data[1]);*/
 
                     DecryptManager DecManager = new DecryptManager((string)msg.data[1]);
+                    //new Thread(DecManager.initDecrypt) { IsBackground = true }.Start();
 
-                    new Thread(DecManager.initDecrypt) { IsBackground = true }.Start();
+                    Thread myThread = new Thread(DecManager.initDecrypt);
+                    myThread.Name = "Thread-DecManager";
+                    myThread.IsBackground = true; //set your running thread to background
+                    myThread.Start();
 
                 }
                 else

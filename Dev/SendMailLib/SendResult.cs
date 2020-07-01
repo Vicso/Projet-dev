@@ -24,7 +24,6 @@ namespace SendMailLib
 
             pdfgenerator.generation(decryptedFile, key);
             mail.send("cesiprojet69@gmail.com", "Azerty10*", "guillaume.brut@viacesi.fr", "TESTESTESTEST", "TESTESTESTEST"); //string gmailid, string password, string toemail, string subject, string body
-            Console.ReadLine();
 
         }
            
