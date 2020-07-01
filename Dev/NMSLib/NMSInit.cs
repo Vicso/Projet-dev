@@ -15,6 +15,7 @@ namespace NMSLib
 {
     public class NMSInit
     {
+        IConnection _connection;
         /// <summary>
         /// The producer
         /// </summary>
@@ -72,6 +73,8 @@ namespace NMSLib
             var topicDestination = SessionUtil.GetDestination(_session, Topic);
             _consumer = _session.CreateConsumer(topicDestination);
             _producer = _session.CreateProducer(topicDestination/*queueDestination*/);
+
+            _connection = connection;
         }
 
         public IMessageProducer getProducer()
@@ -83,6 +86,17 @@ namespace NMSLib
         {
             return _consumer;
         }
+
+        public void closeSession()
+        {
+            _connection.Close();
+            _session.Close();
+            _consumer.Close();
+            _producer.Close();
+
+        }
+
+
 
     }
 }

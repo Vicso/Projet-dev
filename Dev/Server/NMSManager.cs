@@ -31,7 +31,11 @@ namespace Server
         public void listenSuccessMessage()
         {
             ReceiveMessage rm = new ReceiveMessage(nms, _dm, _initialMessage, _id);
-            new Thread(rm.run) { IsBackground = true }.Start();
+            //new Thread(rm.run) { IsBackground = true }.Start();
+            Thread myThread = new Thread(rm.run);
+            myThread.Name = "Thread-ReceiveMessage";
+            myThread.IsBackground = true; //set your running thread to background
+            myThread.Start();
         }
     }
 }
