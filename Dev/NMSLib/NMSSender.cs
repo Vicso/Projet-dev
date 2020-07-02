@@ -59,7 +59,7 @@ namespace NMSLib
             var request = _producer.CreateTextMessage(yop);
             _producer.Send(request);
 
-            Console.WriteLine("sent"+ t.userId);
+            //Console.WriteLine("sent"+ t.userId);
 
         }
 

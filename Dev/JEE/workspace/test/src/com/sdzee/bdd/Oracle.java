@@ -25,8 +25,9 @@ public class Oracle {
 		//Class.forName("oracle.jdbc.OracleDriver");
 		
 		//step2 create  the connection object  
-		Connection con=DriverManager.getConnection(  
-		"jdbc:oracle:thin:@localhost:1521:orcl","root","root");  
+				Connection con=DriverManager.getConnection("jdbc:oracle:thin:@192.168.8.150:1521:orcl","root","root"); 
+				//Connection con=DriverManager.getConnection("jdbc:oracle:thin:@(description=(address_list=(192.168.8.150=(protocol=tcp)(port=1521)(host=prodHost)))(connect_data=(INSTANCE_NAME=orcl)))"); 
+		//Connection con=DriverManager.getConnection("jdbc:oracle:thin:@//192.168.8.150:1521/orcl","root","root"); 
 		  
 		//step3 create the statement object  
 		Statement stmt=con.createStatement();  

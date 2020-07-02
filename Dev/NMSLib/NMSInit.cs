@@ -63,7 +63,8 @@ namespace NMSLib
         {
             const string userName = "admin";
             const string password = "admin";
-            const string uri = "tcp://localhost:61617";//activemq:
+            //const string uri = "tcp://90.14.165.118:61617";//activemq: --> changer pour LAN ou INTERNET
+            const string uri = "tcp://localhost:61617";//activemq: --> changer pour LAN ou INTERNET
             var connecturi = new Uri(uri);
             var factory = new NMSConnectionFactory(connecturi);
             var connection = factory.CreateConnection(/*userName, password*/);

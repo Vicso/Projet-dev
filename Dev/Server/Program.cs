@@ -32,7 +32,7 @@ namespace Server
             // Read a file  
 
 
-            String uri = "http://localhost:8010/Server/services";
+            String uri = "http://192.168.8.150:8010/Server/services";
             //ServiceHost host = new ServiceHost(typeof(CommonLib.CL_Dispatching));
             ServiceHost host = new ServiceHost(typeof(AuthManager));
             try

@@ -61,14 +61,26 @@ namespace Server
                 Texts100.Add(test2);
                 Keys100.Add(key);
 
-                if (key == "CESI")
+                if (key == "FAAA")
                 {
-                    Console.WriteLine("CESI");
+                    Console.WriteLine("25%");
+                }
+                if (key == "KAAA")
+                {
+                    Console.WriteLine("50%");
+                }
+                if (key == "PAAA")
+                {
+                    Console.WriteLine("75%");
+                }
+                if (key == "XAAA")
+                {
+                    Console.WriteLine("95%");
                 }
 
                 if (resetCount > 100)
                 {
-                    Console.WriteLine("... " + currentKey.ToString() + key);
+                    //Console.WriteLine("... " + currentKey.ToString() + key);
                     resetCount = 0;
                     NMS.sendMessage(Texts100, Keys100);
                     Texts100.Clear();

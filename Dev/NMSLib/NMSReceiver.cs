@@ -42,7 +42,7 @@ namespace NMSLib
                 deserializedUser = ser2.ReadObject(ms) as NMSMessage;
                 ms.Close();
 
-                Console.WriteLine("wot" + deserializedUser.ID);
+                //Console.WriteLine("wot" + deserializedUser.ID);
 
                 if (deserializedUser.ID == _id)
                 {

@@ -20,7 +20,7 @@ namespace ClientWindows
 
         public String tryAuth(String user, String password)
         {
-            EndpointAddress ep = new EndpointAddress("http://localhost:8010/Server/services");
+            EndpointAddress ep = new EndpointAddress("http://192.168.8.150:8010/Server/services");
 
             try
             {
